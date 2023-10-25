@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <form id="survey-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" required /><br /><br />
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" required /><br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required /><br /><br />
+
+        <label for="country">Country:</label>
+        <select id="country">
+            <option value="Select">Select</option>
+            <option value="India">USA</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+        </select><br /><br />
+
+        <label>Gender:</label>
+        <input type="checkbox" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br /><br />
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required /><br /><br />
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required /><br /><br />
+
+        <input type="button" value="Submit" onclick="submitForm()" />
+        <input type="button" value="Reset" onclick="document.getElementById('survey-form').reset()" />
+    </form>
+    <div id="overlay">
+        <div id="popup-container">
+            <p id="popup-text"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script src="FORM.JS"></script>
+</body>
+
+</html>
